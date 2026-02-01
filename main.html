@@ -4,19 +4,36 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		blockquote {
+            max-width: 600px;
+            margin: 10px;
+            padding: 15px;
+            border-left: 8px solid green;
+            background-color: #f8fffe;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
 	<h2>What is the captial of India?</h2>
-	<div>
-		<input type="radio"/>
-		<label>New Dellhi</label>
-	</div>
-	<div>
-		<input type="radio"/>
-		<label>Mumbai</label>
-	</div>
+	<div class="options">
+            <input type="radio" id="delhi" name="capital" value="New Delhi">
+            <label for="delhi">New Delhi</label><br>
+            
+            <input type="radio" id="mumbai" name="capital" value="Mumbai">
+            <label for="mumbai">Mumbai</label>
+    </div>
+	
+	<blockquote cite="https://en.wikipedia.org">
+		"New Delhi is the capital of India and an administrative district of NCT Delhi."
+    </blockquote>
+	
+    <p><small>Source: <a href="https://en.wikipedia.org">Wikipedia</a></small></p>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
